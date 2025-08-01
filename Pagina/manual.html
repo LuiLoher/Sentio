@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manual de Identidad - Sentio</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Marco del encabezado */
+    #encabezado {
+      height: 10vh;
+      background-color: #30447c;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+    }
+
+    /* Contenedor del título y logo */
+    .titulo-logo {
+      display: flex;
+      align-items: center;
+      margin-right: 40px;
+    }
+
+    .titulo-logo h1 {
+      margin: 0;
+      margin-right: 15px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .titulo-logo img {
+      height: 40px;
+      width: auto;
+    }
+
+    /* Contenedor del menú */
+    .menu {
+      margin-right: 15px;
+    }
+
+    /* Botón de pestaña */
+    .menu > button {
+      background-color: #4a5f8a;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      white-space: nowrap;
+    }
+
+    .menu > button:hover {
+      background-color: #3a4f7a;
+    }
+
+    /* Marco principal */
+    #principal {
+      height: 90vh;
+      background-color: #f8f9fa;
+      padding: 40px;
+      overflow-y: auto;
+    }
+
+    /* Estilo para el contenido principal */
+    .contenido {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .titulo-principal {
+      font-size: 32px;
+      font-weight: bold;
+      color: #30447c;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .parrafo-contenido {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 30px;
+      text-align: justify;
+    }
+
+    .texto-descarga {
+      font-weight: bold;
+      font-style: italic;
+      font-size: 18px;
+      color: #30447c;
+      text-align: center;
+      margin: 30px 0 20px 0;
+    }
+
+    .download-container {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    .download-box {
+      background-color: #ffffff;
+      border: 2px solid #30447c;
+      border-radius: 10px;
+      padding: 25px 40px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      max-width: 350px;
+    }
+
+    .download-box h3 {
+      color: #30447c;
+      margin: 0 0 15px 0;
+      font-size: 18px;
+    }
+
+    .download-box p {
+      color: #666;
+      margin: 0 0 20px 0;
+      font-size: 14px;
+    }
+
+    .download-btn {
+      background-color: #30447c;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .download-btn:hover {
+      background-color: #243660;
+    }
+
+    .pdf-icon {
+      font-size: 24px;
+      margin-bottom: 10px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <div id="encabezado">
+    <div class="titulo-logo">
+      <h1>Sentio</h1>
+      <img src="imagenes/imagotipo.png" alt="Logo Sentio">
+    </div>
+    
+    <div class="menu">
+      <button onclick="window.location.href='campana.html'">Campaña</button>
+    </div>
+    <div class="menu">
+      <button onclick="window.location.href='mision.html'">Misión</button>
+    </div>
+    <div class="menu">
+      <button onclick="window.location.href='vision.html'">Visión</button>
+    </div>
+    <div class="menu">
+      <button onclick="window.location.href='manual.html'">Manual de Identidad</button>
+    </div>
+    <div class="menu">
+      <button onclick="window.location.href='index1.html'">Inicio</button>
+    </div>
+  </div>
+
+  <!-- Principal -->
+  <div id="principal">
+    <div class="contenido">
+      <h1 class="titulo-principal">Manual de Identidad Corporativa</h1>
+
+      <p class="parrafo-contenido">
+        Un manual de identidad corporativa es un documento fundamental que establece las directrices y normas para el uso correcto de todos los elementos visuales y comunicacionales de una empresa. Este manual define aspectos como el logotipo, la tipografía, los colores corporativos, el tono de comunicación, y las aplicaciones de la marca en diferentes medios y soportes. Su propósito principal es garantizar la coherencia y consistencia de la imagen de marca en todas las comunicaciones y puntos de contacto con el público, creando una identidad sólida y reconocible que transmita los valores y la personalidad de la organización de manera uniforme y profesional.
+      </p>
+
+      <p class="texto-descarga">Aquí puedes descargar nuestro manual de identidad corporativa</p>
+
+      <div class="download-container">
+        <div class="download-box">
+          <span class="pdf-icon">📄</span>
+          <h3>Manual de Identidad Corporativa</h3>
+          <p>Documento PDF con todas las directrices de marca de Sentio</p>
+          <a href="archivos/mic.pdf" download="Manual_Identidad_Sentio.pdf" class="download-btn">
+            Descargar PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
